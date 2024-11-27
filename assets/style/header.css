@@ -1,0 +1,210 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    box-shadow:
+        0 12px 24px rgba(0, 0, 0, 0.144),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.header__body {
+    display: flex;
+    height: 100px;
+    background-color: white;
+    justify-content: center;
+}
+
+.header__logo_desctop {
+    width: 7%;
+    z-index: 3;
+}
+
+.header__list_left {
+    display: flex;
+    z-index: 2;
+}
+
+.header__list_right {
+    display: flex;
+    z-index: 2;
+}
+
+.header__list_left li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0 0 0 20px;
+    align-self: center;
+    padding-right: 20px;
+}
+
+.header__list_right li {
+    text-decoration: none;
+    list-style: none;
+    align-self: center;
+    padding-right: 20px;
+}
+
+.header__burger {
+    display: none;
+}
+
+.header__link {
+    font-family: var(--title);
+    color: var(--ticolor);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+@media screen and (min-width: 1280px) {
+    .header__logo_mobile {
+        display: none;
+    }
+
+    .header__logo_desctop img {
+        max-width: 100%;
+    }
+
+    .header__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        letter-spacing: 1px;
+    }
+
+    .header__link {
+        display: flex;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.4em;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 1.5px;
+        transition: background-size 0.6s;
+    }
+
+    .header__link:hover {
+        background-size: 100% 1.5px;
+        padding-bottom: 2px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    body.lock {
+        overflow: hidden;
+    }
+
+    .header__body {
+        height: 60px;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .header__logo_mobile {
+        width: 150px;
+        overflow: hidden;
+        position: relative;
+        z-index: 3;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .header__logo_mobile img {
+        max-width: 30%;
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+        align-self: center;
+        margin-right: 10px;
+    }
+
+    .header__burger span {
+        position: absolute;
+        background-color: black;
+        left: 0;
+        top: 9px;
+        width: 100%;
+        height: 2px;
+        transition: all 0.3s ease 0s;
+        opacity: 0.4;
+    }
+
+    .header__burger:before,
+    .header__burger:after {
+        content: "";
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+        opacity: 0.4;
+    }
+
+    .header__burger:before {
+        top: 0;
+    }
+
+    .header__burger:after {
+        bottom: 0;
+    }
+
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header__burger.active span {
+        transform: scale(0);
+    }
+
+    .header__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: auto;
+        background: white;
+        padding: 60px 0 0 0;
+        transition: all 0.5s ease 0s;
+    }
+
+    .header__menu.active {
+        top: 0;
+    }
+
+    .header__list_right,
+    .header__list_left {
+        display: block;
+        padding: 0;
+    }
+
+    .header__list_right li,
+    .header__list_left li {
+        margin: 20px 0 20px 20px;
+    }
+
+    .header__logo_desctop {
+        display: none;
+    }
+
+    .header__link {
+        text-decoration: none;
+        font-size: 1.6em;
+    }
+}

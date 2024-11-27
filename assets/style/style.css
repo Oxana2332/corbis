@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Marck+Script&display=swap");
+
+@import url("./header.css");
+
+@import url("./main.css");
+
+@import url("./aboutUs.css");
+
+@import url("./owl.carousel.min.css");
+@import url("./owl.theme.default.min.css");
+@import url("./slider.css");
+
+@import url("./menu.css");
+
+@import url("./faq.css");
+
+@import url("./footer.css");
+
+:root {
+    --title: "Marck Script", cursive;
+    --ticolor: rgba(88, 88, 88, 0.911);
+    /* --ticolor: black; */
+    --text: "Cormorant Infant", serif;
+    --texcolor: rgba(88, 88, 88, 0.911);
+    /* --texcolor: black; */
+    --great-vibes: "Great Vibes", serif;
+    --gvcolor: rgba(0, 0, 0, 0.651);
+    /* --gvcolor: black; */
+}
+
+.title {
+    color: var(--ticolor);
+    font-family: var(--title);
+    font-size: 2em;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+
+.text {
+    color: var(--texcolor);
+    font-family: var(--text);
+}

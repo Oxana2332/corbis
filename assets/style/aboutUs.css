@@ -1,0 +1,30 @@
+.about-us {
+    /* background-color: black; */
+}
+
+.about-us__figure {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.about-us__text {
+    font-size: 1.2em;
+}
+
+.about-us__img {
+    float: right;
+    width: 15vw;
+    padding: 0 0 5% 5%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+@media screen and (min-width: 321px) and (max-width: 767px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    
+}
+
+@media screen and (min-width: 1280px) {}

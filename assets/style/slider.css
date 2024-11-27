@@ -1,0 +1,38 @@
+.carousel {
+    margin: 1% 0;
+    padding: 1% 0;
+    background-color: whitesmoke;
+}
+
+.owl-carousel {
+    width: 99%;
+}
+
+.owl-carousel__item {
+    padding: 5vh 0 0 0;
+}
+
+.owl-carousel__img {
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .owl-carousel {
+        width: 99.5%;
+    }
+
+    .owl-carousel__item {
+        width: 100%;
+        padding: 30% 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .owl-carousel {
+        width: 99.8%;
+    }
+
+    .owl-carousel__item {
+        padding: 0 0 0 0;
+    }
+}
