@@ -48,21 +48,20 @@
             <p class="main-section__text">Настоящая любовь...</p>
         </section>
 
-        <article class="about-us">
+        <article class="about-us" id="aboutUs">
             <h2 class="title">О нас</h2>
             <figure class="about-us__figure">
-                <img class="text about-us__img" src="./assets/img/1.webp" alt="">
+                <img class="text about-us__img_right" src="./assets/img/1.webp" alt="">
                 <figcaption class="text about-us__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Phasellus dapibus
                     dictum nisl ac
                     molestie. Nunc rhoncus ultricies vestibulum. Maecenas eget vulputate mi. Praesent eleifend, ipsum at
-                    porttitor interdum, diam urna pellentesque felis, ut hendrerit dui nunc et mi. Quisque urna ligula,
-                    auctor non quam in, commodo suscipit ante. Praesent vel est nec erat congue vestibulum. Aliquam
-                    tincidunt velit at interdum ornare. Mauris vitae placerat erat. Cras et tristique enim, sed interdum
-                    nulla. Etiam sed placerat mi.</figcaption>
+                    porttitor interdum, diam urna pellentesque felis, ut hendrerit dui nunc et mi.</figcaption>
             </figure>
             <div class="clearfix"></div>
             <figure class="about-us__figure">
+                <img class="text about-us__img_left" src="./assets/img/4.webp" alt="">
+                <img class="text about-us__img_left" src="./assets/img/5.webp" alt="">
                 <figcaption class="text about-us__text">Orci varius natoque penatibus et magnis dis parturient montes,
                     nascetur
                     ridiculus
@@ -70,19 +69,24 @@
                     id quam eu ipsum commodo rutrum ac at dui. Donec quis ex vel ligula finibus dignissim. Fusce a
                     malesuada
                     dui, vitae aliquam enim. Quisque ornare nec nulla nec rutrum. Nullam arcu augue, hendrerit nec elit
-                    iaculis, facilisis luctus neque. Proin congue venenatis sapien. Fusce gravida blandit sapien in
-                    tincidunt. Pellentesque vestibulum, turpis nec egestas rutrum, tellus tellus luctus urna, id iaculis
-                    lorem eros id libero. In congue lacus quis diam semper pellentesque ac non justo. Mauris at risus
-                    quis
-                    mi pellentesque feugiat at eget metus. Phasellus nisl nulla, molestie ut augue eget, consectetur
-                    elementum tortor. Integer venenatis arcu lacinia massa ultrices, ac ultrices erat tempor. Phasellus
-                    commodo nec mi eget efficitur. Fusce mollis tristique consectetur.</figcaption>
-                <img class="text about-us__img" src="" alt="">
+                    iaculis, facilisis luctus neque. Proin congue venenatis sapien.</figcaption>
             </figure>
+            <div class="clearfix"></div>
+            <figure class="about-us__figure">
+                <img class="text about-us__img_right" src="./assets/img/8.webp" alt="">
+                <img class="text about-us__img_right" src="./assets/img/6.webp" alt="">
+                <img class="text about-us__img_right" src="./assets/img/7.webp" alt="">
+                <figcaption class="text about-us__text">Orci varius natoque penatibus et magnis dis parturient montes,
+                    nascetur
+                    ridiculus
+                    mus. Vivamus
+                    id quam eu ipsum commodo rutrum ac at dui. Donec quis ex vel ligula finibus dignissim. Fusce a
+                    malesuada
+                    dui, vitae aliquam enim.</figcaption>
+            </figure>
+            <div class="clearfix"></div>
         </article>
 
-        <button>кнопка скачать меню</button>
-        <section>Аккордеон FAQ</section>
         <section class="carousel">
             <div class="owl-carousel">
                 <div class="owl-carousel__item">
@@ -98,9 +102,91 @@
                     <img class="owl-carousel__img" src="./assets/img/11.jpeg" alt="">
                 </div>
         </section>
-    </main>
 
-    <footer>лого контакты телефон дата</footer>
+        <article class="menu" id="menu">
+            <h2 class="title menu__title">Меню</h2>
+            <div>
+                <a class="menu__link" href="">
+                    <img class="menu__img" src="./assets/img/cupcake.png" alt="">
+                </a>
+                <a class="menu__link" href="">
+                    <img class="menu__img" src="./assets/img/cake.png" alt="">
+                </a>
+                <a class="menu__link" href="">
+                    <img class="menu__img" src="./assets/img/wedding-cake1.png" alt="">
+                </a>
+                <a class="menu__link" href="">
+                    <img class="menu__img" src="./assets/img/birthday-cake.png" alt="">
+                </a>
+            </div>
+        </article>
+
+        <section>
+            <article class="accordion" id="faq">
+                <p class="title accordion__title">FAQ</p>
+                <div class="text accordion__tab">
+                    <input class="accordion__input" id="tab-one" type="checkbox">
+                    <label class="accordion__label" for="tab-one">Как сделать заказ</label>
+                    <div class="accordion__content">
+                        <p class="accordion__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Tenetur, architecto, explicabo
+                            perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias
+                            iure facere dolorum adipisci eum? Saepe, itaque.Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Tenetur, architecto, explicabo
+                            perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias
+                            iure facere dolorum adipisci eum? Saepe, itaque.Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Tenetur, architecto, explicabo
+                            perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias
+                            iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                </div>
+                <div class="text accordion__tab">
+                    <input class="accordion__input" id="tab-two" type="checkbox">
+                    <label class="accordion__label" for="tab-two">Где посмотреть состав продукта</label>
+                    <div class="accordion__content">
+                        <p class="accordion__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Tenetur, architecto, explicabo
+                            perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias
+                            iure facere dolorum adipisci eum? Saepe, itaque.Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Tenetur, architecto, explicabo
+                            perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias
+                            iure facere dolorum adipisci eum? Saepe, itaque.Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Tenetur, architecto, explicabo
+                            perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias
+                            iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                </div>
+                <div class="text accordion__tab">
+                    <input class="accordion__input" id="tab-N" type="checkbox">
+                    <label class="accordion__label" for="tab-N">Часто задаваемый вопрос номер N</label>
+                    <div class="accordion__content">
+                        <p class="accordion__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Tenetur, architecto, explicabo
+                            perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias
+                            iure facere dolorum adipisci eum? Saepe, itaque.Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Tenetur, architecto, explicabo
+                            perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias
+                            iure facere dolorum adipisci eum? Saepe, itaque.Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Tenetur, architecto, explicabo
+                            perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias
+                            iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <br>
+    <footer class="text footer">
+        <a href="index.html">
+            <img class="footer__logo" src="./assets/img/logo&icon/logoH.png" alt="logo">
+        </a>
+        <div class="footer__item-link">
+            <a class="footer__link" href="tel:+79991112233">+79991112233X</a>
+            <a class="footer__link" href="https://t.me/corbis">t.me/corbis</a>
+            <a class="footer__link" href="mailto:corbis@gmail.com">corbis@gmail.com</a>
+        </div>
+        <img id="contacts" class="footer__img" src="./assets/img/call.png" alt="phone">
+    </footer>
 
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>

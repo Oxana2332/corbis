@@ -1,0 +1,80 @@
+.accordion {
+    margin: 0 auto;
+}
+
+.accordion__title {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 3em;
+}
+
+.accordion__tab {
+    position: relative;
+    /* margin-bottom: 1px; */
+    margin: 1px auto;
+    width: 90%;
+    overflow: hidden;
+}
+.accordion__input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.accordion__label {
+    position: relative;
+    display: block;
+    padding: 1em 1em 1em 1em;
+    background-color: whitesmoke;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.accordion__content {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.7s;
+    -o-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+.accordion__content-text {
+    margin: 1em;
+}
+
+.accordion__input:checked ~ .accordion__content {
+    max-height: 100vh;
+}
+
+.accordion__label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+.accordion__input[type="checkbox"] + .accordion__label::after {
+    content: "+";
+}
+
+.accordion__input[type="checkbox"] + .accordion__label:hover {
+    background-color: rgba(88, 88, 88, 0.192);
+    color: rgba(255, 0, 0, 0.719);
+}
+
+.accordion__input[type="checkbox"]:checked + .accordion__label::after {
+    transform: rotate(45deg);
+}
+
+@media screen and (max-width: 767px) {
+    .accordion__input[type="checkbox"] + .accordion__label::after {
+        content: "";
+    }
+}
