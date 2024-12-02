@@ -1,4 +1,5 @@
 .footer {
+    margin: 0 auto;
     padding: 5% 0 10% 0;
     background-color: black;
     display: flex;
@@ -9,8 +10,8 @@
 }
 
 .footer__logo {
-    padding: 0 1%;
-    width: 7vw;
+    margin: 0 1%;
+    width: 100%;
     /* opacity: 0.7; */
 }
 
@@ -27,8 +28,13 @@
     text-decoration: none;
 }
 
+.footer__link:hover {
+    text-decoration: underline;
+}
+
 .footer__img {
-    width: 10%;
-    height: 10%;
+    width: 128px;
+    /* width: 10%; */
+    /* height: 10%; */
     margin: 0 1%;
 }

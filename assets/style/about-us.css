@@ -1,6 +1,6 @@
 .about-us__figure {
     width: 75vw;
-    margin: 0 auto;
+    margin: 0% auto;
     padding: 3% 0;
 }
 
@@ -11,7 +11,7 @@
 .about-us__img_right {
     float: right;
     width: 15vw;
-    padding: 0 0 5% 5%;
+    padding: 0 0 0 5%;
 }
 
 .about-us__img_left {
