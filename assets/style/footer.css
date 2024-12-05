@@ -5,36 +5,35 @@
     display: flex;
     height: 100%;
     color: aliceblue;
-    justify-content: space-around;
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__logo {
-    margin: 0 1%;
-    width: 100%;
-    /* opacity: 0.7; */
+    margin: 15px 0 0 5px;
+    width: 35px;
 }
 
 .footer__item-link {
     display: flex;
     flex-direction: column;
+    margin: 0 10%;
 }
 
 .footer__link {
     color: aliceblue;
     font-size: 1em;
+    line-height: 1.3em;
     text-align: center;
-    line-height: 2em;
     text-decoration: none;
 }
 
 .footer__link:hover {
     text-decoration: underline;
+    color: rgb(253, 131, 131);
 }
 
 .footer__img {
-    width: 128px;
-    /* width: 10%; */
-    /* height: 10%; */
+    width: 15%;
     margin: 0 1%;
 }
