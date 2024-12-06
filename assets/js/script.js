@@ -1,3 +1,4 @@
+//хедер
 $(document).ready(function () {
 	let isOpen = false;
 	function checkIsOpen(newIsOpen) {
@@ -29,7 +30,7 @@ $(document).ready(function () {
 	});
 });
 
-//слайдер
+//карусель
 $('.owl-carousel').owlCarousel({
 	loop: true,
 	margin: 10,
