@@ -6,7 +6,7 @@
 }
 
 .menu__title {
-    margin: 0 auto 18% auto;
+    margin: 0 auto 15% auto;
 }
 
 .menu__link {
@@ -31,6 +31,11 @@
     .menu {
         width: 40vw;
     }
+
+    .menu__title {
+        margin: 25% auto 18% auto;
+    }
+
     .menu__img {
         width: 14vw;
     }

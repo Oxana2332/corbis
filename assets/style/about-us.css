@@ -1,7 +1,11 @@
 .about-us__figure {
     width: 75vw;
     margin: 0% auto;
-    padding: 3% 0;
+    padding: 0 0 3% 0;
+}
+
+.about-us__title {
+    margin: 0 auto 10% auto;
 }
 
 .about-us__text {
@@ -24,16 +28,18 @@
     clear: both;
 }
 
-@media screen and (min-width: 321px) and (max-width: 767px) {
-}
+@media screen and (min-width: 768px) and (max-width: 1278px) {
+    #aboutUs {
+        margin-top: 10%;
+    }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
     .about-us__img_right {
         width: 13vw;
     }
 
     .about-us__img_left {
         width: 32.5vw;
+        padding: 0 5% 0 0;
     }
 
     /* .about-us__text {
@@ -41,9 +47,13 @@
     } */
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1279px) {
+    /* #aboutUs {
+        margin-top: 10%;
+    } */
+
     .about-us__figure {
-        width: 45vw;
+        width: 55vw;
     }
 
     .about-us__img_right {

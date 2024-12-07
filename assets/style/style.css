@@ -40,3 +40,26 @@
     font-size: 1.2em;
     line-height: 1.3em;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1278px) {
+    .title {
+        font-size: 2.5em;
+    }
+
+    .text {
+        font-size: 1.5em;
+        line-height: 1.6em;
+    }
+}
+
+@media screen and (min-width: 1279px) {
+    .title {
+        font-size: 3em;
+        margin: 5% auto 1% auto;
+    }
+
+    .text {
+        font-size: 1.6em;
+        line-height: 1.7em;
+    }
+}

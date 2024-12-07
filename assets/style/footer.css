@@ -12,12 +12,14 @@
 .footer__logo {
     margin: 15px 0 0 5px;
     width: 35px;
+    /* border: 1px solid white; */
 }
 
 .footer__item-link {
     display: flex;
     flex-direction: column;
     margin: 0 10%;
+    /* border: 1px solid white; */
 }
 
 .footer__link {
@@ -36,4 +38,38 @@
 .footer__img {
     width: 15%;
     margin: 0 1%;
+    /* border: 1px solid white; */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1278px) {
+    .footer {
+        justify-content: space-around;
+    }
+
+    .footer__item-link {
+        margin: 0 0 0 5%;
+    }
+
+    .footer__logo {
+        width: 75px;
+    }
+}
+
+@media screen and (min-width: 1279px) {
+    .footer {
+        justify-content: space-around;
+    }
+
+    .footer__link {
+        font-size: 1.5em;
+        line-height: 1.8em;
+    }
+
+    .footer__item-link {
+        margin: 0 0 0 10%;
+    }
+
+    .footer__logo {
+        width: 95px;
+    }
 }
